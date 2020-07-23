@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div id="back-to-homescreen">
+      <a
+        href="#"
+        style="
+          font-size: 24px;
+          color: black;
+          text-decoration: none;
+          padding-right: 623px;
+        "
+      >
+        Mot Phim
+      </a>
+    </div>
+    <div class="container-login" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <!-- <a href="#" class="social"><i class="fab fa-linked-in"></i></a> -->
+          </div>
+          <span>or use your email for registration</span>
+          <input type="email" placeholder="Email..." />
+          <input type="password" placeholder="Password..." />
+          <input type="password" placeholder="Confirm password..." />
+          <button style="color: #333;">Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <!-- <a href="#" class="social"><i class="fab fa-linked-in"></i></a> -->
+          </div>
+          <span>or use your Account</span>
+          <input type="email" placeholder="Email..." />
+          <input type="password" placeholder="Password..." />
+          <button style="color: #333;">Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div
+            class="overlay-panel overlay-left"
+            style="
+              background: url(https://i.pinimg.com/736x/ec/f1/8d/ecf18dacd690401daf53b177ef5d8399--california-history-southern-california.jpg);
+            "
+          >
+            <h1>Welcome back to Mot Phim!</h1>
+            <p>To keep connected please login with your personal info</p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div
+            class="overlay-panel overlay-right"
+            style="
+              background: url(https://i.pinimg.com/736x/ec/f1/8d/ecf18dacd690401daf53b177ef5d8399--california-history-southern-california.jpg);
+            "
+          >
+            <h1>Welcome to Mot Phim, mate!</h1>
+            <p>Enter your personal details and start your journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
