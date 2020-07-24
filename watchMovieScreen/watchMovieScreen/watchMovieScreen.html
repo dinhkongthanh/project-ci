@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="watchMovieScreen.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="container" style="width: 100%;">
+      <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"><strong>MotPhim</strong> </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trailer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 Genre
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+        <hr style="border: 1px solid #dbdbdb;">
+      </div>
+      <div class="body-content">
+        <div class="body-top d-flex justify-content-center pt-3 mt-2">
+          <div class="body-top-left">
+            <div class="body-top-left-movie pr-5 "><iframe width="760" height="480" src="https://www.youtube.com/embed/pDsGCi4-Ekg" style="isolation: isolate;" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="body-top-left-detail">
+              <div class="body-top-left-detail-button">
+                <button class="active"  onclick="description()">Description</button>
+                <button  onclick="comment()">Comment</button>
+                <hr style="border: 1px solid #dbdbdb; width: 500px;">
+              </div>
+              <div id="body-description" class="body-top-left-description">
+                <h3>Movie title</h3>
+                <p>Country: </p>
+                <p>Year: </p>
+                <p>Quality: </p>
+                <p>Imdb: </p>
+                <p>Genre: </p>
+                <p>Description: “The King: Eternal Monarch” mang màu sắc huyền ảo kết hợp giữa cổ trang và hiện đại. Bộ phim xoay quanh câu chuyện thế giới song song. Một vị hoàng đế đang cố gắng ngăn chặn ác quỷ xâm nhập vào thế giới loài người, thì ác quỷ cùng lúc đã mở được cánh cửa đến từ thế giới song song. Tại thời hiện đại, một viên cảnh sát đang phải mạo hiểm để bảo vệ mạng sống của bản thân và gia đình.
+                  Bộ phim do biên kịch vàng Kim Eun Sook viết kịch bản, biên kịch đã từng chắp bút cho rất nhiều những bom tấn như Hậu Duệ của Mặt Trời, Người Thừa Kế,... Đây chắc chắn sẽ là bộ phim không thể bỏ lỡ trong thời gian tới. </p>
+              </div>
+              <div id="body-comment" class="body-top-left-comment">
+                <p>What is Lorem Ipsum?
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                  <p>What is Lorem Ipsum?
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>What is Lorem Ipsum?
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                      <p>What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p>What is Lorem Ipsum?
+                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                          <p>What is Lorem Ipsum?
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>What is Lorem Ipsum?
+                              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                              
+              </div>
+            </div>
+          </div>
+          <div class="body-top-right">
+            <fieldset>
+              <legend>Recommendations</legend>
+              <hr style="border: 1px solid #bdbdbd;" class="mt-1">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81akueB8XVL._AC_SY879_.jpg" class="card-img mt-4 ml-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                      <div class="link-to-recommend d-flex justify-content-center" style="width:fit-content;">
+                         <a href="#" class="card-link c-dark">Watch movie</a>
+                  <a href="#" class="card-link">Trailer</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81akueB8XVL._AC_SY879_.jpg" class="card-img mt-4 ml-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                      <div class="link-to-recommend d-flex justify-content-center" style="width:fit-content;">
+                         <a href="#" class="card-link c-dark">Watch movie</a>
+                  <a href="#" class="card-link">Trailer</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81akueB8XVL._AC_SY879_.jpg" class="card-img mt-4 ml-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                      <div class="link-to-recommend d-flex justify-content-center" style="width:fit-content;">
+                         <a href="#" class="card-link c-dark">Watch movie</a>
+                  <a href="#" class="card-link">Trailer</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81akueB8XVL._AC_SY879_.jpg" class="card-img mt-4 ml-2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Movie title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. </p>
+                      <div class="link-to-recommend d-flex justify-content-center" style="width:fit-content;">
+                         <a href="#" class="card-link c-dark">Watch movie</a>
+                  <a href="#" class="card-link">Trailer</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+
+              
+            </fieldset>
+          </div>
+        </div>
+        <div class="body-bottom mt-5 ">
+          <h5>Related movies <span>____________________</span></h5>
+         <ul class="d-flex justify-content-center">
+           <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+           <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title</strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image"> </div> </a> </li>
+           <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title</strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image"> </div> </a> </li>
+           <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title</strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image"></div> </a></li>
+           <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title</strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image"></div> </a></li>
+         </ul>
+
+         
+        
+
+          </div>
+        </div>
+      </div>
+        <div class="footer"></div>
+        <footer class="page-footer font-small bg-dark pt-4 mb-3 m-0">
+
+          <!-- Footer Links -->
+          <div class="container-fluid text-center text-md-left">
+        
+      
+            <div class="row">
+ 
+              <div class="col-md-6 mt-md-0 mt-3">
+        
+                <h5 class="text-uppercase" style="color: #dbdbdb;">© MotPhim</h5>
+                <p style="color: #dbdbdb;">A product by ...</p>
+        
+              </div>
+         
+        
+              <hr class="clearfix w-100 d-md-none pb-3">
+        
+              
+        
+            </div>
+         
+        
+          </div>
+          
+        
+        </footer>
+        
+    </div>
+    </div>
+ 
+    <script src="watchMovieScreen.js"></script>
+</body>
+</html>
