@@ -1,0 +1,52 @@
+.bg-dark {
+  background-color: #343a40 !important;
+}
+.body-top-left-comment {
+  display: none;
+}
+.body-top-left-description {
+  padding: 0px 0px 0px 7px;
+}
+.body-top-left-detail {
+  border: 1px solid #dbdbdb;
+  border-radius: 10px;
+  width: 760px;
+  padding-right: 5px;
+}
+.body-top-left-detail {
+  padding: 3px 0px 0px 3px;
+}
+a {
+  text-decoration: none;
+  padding-right: 5px;
+}
+ul li {
+  padding-right: 5px;
+  list-style-type: none;
+}
+.body-bottom li a i {
+  display: none;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+}
+li a p{
+    position: absolute; margin-top: 287px;
+}
+
+.body-bottom li a:hover i {
+  display: inline-block;
+}
+
+.image{
+    height: 345px;
+    width: 239px;
+    background: url('https://icdn.phim1080.net/ff/2019/11/13/426a79b7e42eb903_eae56ce1b9eb125e_384981573625488216068.jpg');
+    background-size: 100%;
+    background-position: center;
+    transition: 0.2s ease-in;
+}
+.body-bottom li a:hover .image {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: 120%;
+  background-position: center;
+}
