@@ -1,0 +1,78 @@
+.popup-top {
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    width: 495px;
+      height: 279px;
+      border-radius: 10px;
+      background: url("https://us.123rf.com/450wm/xurzon/xurzon2002/xurzon200200091/141371074-texture-of-a-perfect-black-brick-wall-as-background-or-wallpaper.jpg?ver=6");
+  }
+  .popup-h1 {
+    margin-top: 2px;
+    margin-bottom: 12px;
+    font-size: 35px;
+    /* font-family: cursive; */
+    color: #fff;
+    margin-left: 189px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    
+  }
+  .popup-bottom p{
+    overflow: hidden;
+     height: 90px;
+  }
+  .popup-bottom:hover p{
+    overflow-y: auto;
+  }
+  @-webkit-keyframes glow {
+      from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #57100b, 0 0 40px #57100b, 0 0 50px #57100b, 0 0 60px #57100b, 0 0 70px #57100b;
+      }
+      
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #da4a40, 0 0 40px #da4a40, 0 0 50px #da4a40, 0 0 60px #da4a40, 0 0 70px #da4a40, 0 0 80px #da4a40;
+      }
+    }
+  
+  
+  .popup-top-des {
+    padding-left: 193px;
+    color: white;
+  }
+  .popup-top-left img {
+      height: 250px;
+      width: 250px;
+      margin-top: 12px;
+      margin-left: 12px;
+      border: 2px solid black;
+      border-radius: 10px;
+      box-shadow: 7px 7px 8px rgb(29, 28, 28);
+  }
+  .popup-top-right{
+      margin-left: -173px;
+      margin-top: 22px;
+  }
+  /* hr {
+      border-color: whitesmoke;
+      display: block;
+      opacity: 0.6;
+      margin-top: 0.5em;
+      margin-bottom: 0.5em;
+      margin-left: 188px;
+      margin-right: auto;
+      border-style: inset;
+      border-width: 0.5px;
+      width: 50%;
+  } */
+  .rating-star{
+      padding-left: 194px;
+      
+  }
+  .checked {
+      color: orange;
+    }
+    .unchecked{
+      color: #b5a78e;
+    }
+  
