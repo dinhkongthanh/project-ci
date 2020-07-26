@@ -1,560 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="cardSlider.css" />
-  <link rel="stylesheet" href="popup.css">
-  <!-- <link rel="stylesheet" href="upcomingfilm.css">
-  <link rel="stylesheet" href="motphimhome.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-</head>
-
-<body>
-  <!DOCTYPE html>
-  <html lang="en">
-
-  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="cardSlider.css" />
+  <link rel="stylesheet" href="popup.css">
+    <link rel="stylesheet" href="upcomingfilm.css">
+    <link rel="stylesheet" href="motphimhome.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container">
 
-  <body>
-    <div class="container-fluid">
-      <div class="container">
-        <div class="body-review">
-          <div class="carousel" id="blur">
-            <div class="carousel-item">
-              <div class="card">
-                <div class="sliderText"><h3>slide one</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="card">
-                <div class="sliderText"><h3>slide two</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
             
-      
-      
-            <div class="carousel-item">
-              <div class="card">
-                <div class="sliderText"><h3>slide three</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
+            <div class="header">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="#"><strong>MotPhim</strong> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Trailer</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Country
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">America</a>
+                            <a class="dropdown-item" href="#">Korea</a>
+                            <a class="dropdown-item" href="#">Vietnam</a>
+                            <a class="dropdown-item" href="#">Japan</a>
+                            <a class="dropdown-item" href="#">Spain</a>
+                            <a class="dropdown-item" href="#">Germany</a>
+                            
+                          </div>
+                        </li>
+                        
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Genre
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Adventure</a>
+                            <a class="dropdown-item" href="#">Horror</a>
+                            <a class="dropdown-item" href="#">Drama</a>
+                            <a class="dropdown-item" href="#">Comedy</a>
+                            <a class="dropdown-item" href="#">Family</a>
+                            
+                            
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Booking</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+                  <hr style="border: 1px solid #dbdbdb;">
+               
             </div>
-            <div class="carousel-item">
-              
-              <div class="card">
+            <div class="body">
+                <div class="voted-title">
+                   <p>Voted Film</p> 
+                </div>
                 
-                <div class="sliderText"><h3>four</irpn-man></h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>five</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>six</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>seven</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>eight</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-      
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>nine</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>ten</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-      
-      
-            <div class="carousel-item">
-              
-              <div class="card">
-                
-                <div class="sliderText"><h3>eleven</h3></div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-      
-            <div class="carousel-item">
-              <div class="card">
-                <div class="sliderText"><h3>twelve</div>
-      
-                <div class="content">
-                  <p>asdasdasdasdasd</p>
-                  <a href="#" onclick="toggle()">Read more</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div id="popup">
-            <div class="popup-top">
-              <div class="popup-top-left">
-                <img
-                  src="https://pyxis.nymag.com/v1/imgs/794/95b/f753af574e71933a5d92a88eabf0c41549-23-brightburn-review.rsquare.w700.jpg"
-                  alt="">
-              </div>
-              <div class="popup-top-right">
-                <h1 class="popup-h1">FILM NAME</h1>
-                <div class="popup-top-des"><span class="popup-span">Country:</span> #N/A </div>
-                <div class="popup-top-des"><span class="popup-span">Length:</span> #N/A</div>
-                <div class="popup-top-des"><span class="popup-span">idmb:</span> #N/A</div>
-                <div class="popup-top-des"><span class="popup-span">rotten tomatoes:</span> #N/A </div>
-                <div class="popup-top-des"><span class="popup-span">short summary:</span> #N/A</div>
-                <hr>
-                <div class="popup-top-des"><span class="popup-span"><i class="fa fa-copyright"></i> <strong> Mọt
-                      Phim</strong> </span></div>
-                <div class="popup-top-des" style="padding-bottom: 3px;"><span class="popup-span">Tháng Bảy 25,
-                    2020</span> </div>
-                <div class="rating-star">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star unchecked"></span>
-                  <span class="fa fa-star unchecked"></span>
-                </div>
-
-              </div>
-            </div>
-            <div class="popup-bottom">
-              <p>What is Lorem Ipsum?
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                distribution of letters, as opposed to using 'Content here, content here', making it look like
-                readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
-                Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
-                humour and the like).
-
-
-                Where does it come from?
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of
-                "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book
-                is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem
-                Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-              </p>
-              <a href="#" onclick="toggle()">close</a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="header">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#"><strong>MotPhim</strong> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Trailer</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Country
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">America</a>
-                    <a class="dropdown-item" href="#">Korea</a>
-                    <a class="dropdown-item" href="#">Vietnam</a>
-                    <a class="dropdown-item" href="#">Japan</a>
-                    <a class="dropdown-item" href="#">Spain</a>
-                    <a class="dropdown-item" href="#">Germany</a>
-
-                  </div>
-                </li>
-
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Genre
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Adventure</a>
-                    <a class="dropdown-item" href="#">Horror</a>
-                    <a class="dropdown-item" href="#">Drama</a>
-                    <a class="dropdown-item" href="#">Comedy</a>
-                    <a class="dropdown-item" href="#">Family</a>
-
-
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Booking</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
-          <hr style="border: 1px solid #dbdbdb;">
-
-        </div>
-        <div class="body">
-          <div class="voted-title">
-            <p>Voted Film</p>
-          </div>
-
-          <div class="body-top-vote d-flex justify-content-center">
-
-            <div class="body-top-vote-right">
-              <div class="body-top-vote-right-top">
+                <div class="body-top-vote d-flex justify-content-center">
+                    
+                    <div class="body-top-vote-right">
+                        <div class="body-top-vote-right-top">
+                            <div style="width: max-content;" class="body-bottom mt-2 ">
+                                <ul class=" ">
+                                   <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div style="height:278px ; width: 490px ;" class="image" > </div> </a> </li>
+                                   
+                                  </ul>
+                              </div>
+                        </div>
+                        <div class="body-top-vote-right-bottom ">
+                            <div style="width: max-content;" class="body-bottom mt-2">
+                            <ul class=" d-flex">
+                               <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div  class="image" > </div> </a> </li>
+                               <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                              
+                              </ul>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    <div class="body-top-vote-left d-flex">
                 <div style="width: max-content;" class="body-bottom mt-2 ">
                   <ul class=" ">
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div style="height:278px ; width: 490px ;" class="image"> </div>
-                      </a> </li>
-
-                  </ul>
+                     <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                     <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                     <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                    </ul>
                 </div>
-              </div>
-              <div class="body-top-vote-right-bottom ">
-                <div style="width: max-content;" class="body-bottom mt-2">
-                  <ul class=" d-flex">
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div class="image"> </div>
-                      </a> </li>
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div class="image"> </div>
-                      </a> </li>
-
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-            <div class="body-top-vote-left d-flex">
-              <div style="width: max-content;" class="body-bottom mt-2 ">
-                <ul class=" ">
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                </ul>
-              </div>
-              <div style="width: max-content;" class="body-bottom mt-2 ">
-                <ul class=" ">
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image"> </div>
-                    </a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="today-title">
-            <p>Today Film</p>
-          </div>
-
-          <div class="body-top-today-film d-flex justify-content-center " style="padding: 0;">
-
-            <div class="body-top-today-right ">
-              <div class="body-top-today-right-top">
                 <div style="width: max-content;" class="body-bottom mt-2 ">
-                  <ul class=" ">
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div style="height:220px ; width: 390px ;" class="image"> </div>
-                      </a> </li>
-
-                  </ul>
-                </div>
-              </div>
-              <div class="body-top-today-right-bottom ">
-                <div style="width: max-content;" class="body-bottom mt-2">
-                  <ul class=" d-flex">
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div class="image2" style="margin-right: 4px;"> </div>
-                      </a> </li>
-                    <li><a href="#"> <i class="far fa-play-circle"></i>
-                        <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                        <div class="image2"> </div>
-                      </a> </li>
-
-                  </ul>
-                </div>
-              </div>
-
-            </div>
-            <div class="body-top-vote-left d-flex">
-              <div style="width: max-content;" class="body-bottom mt-2 ">
-                <ul class=" ">
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                </ul>
-              </div>
-              <div style="width: max-content;" class="body-bottom mt-2 ">
-                <ul class=" ">
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                </ul>
-              </div>
-              <div style="width: max-content;" class="body-bottom mt-2 ">
-                <ul class=" ">
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                  <li><a href="#"> <i class="far fa-play-circle"></i>
-                      <p><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p>
-                      <div class="image1"> </div>
-                    </a> </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="body-hot-today-movie">
-            <div class="hot-today-movie-left">
-
-              <fieldset>
-                <legend><button>what's hot today?</button></legend>
-
-                <div class="hot-today-movie-left-first">
-                  <a href="#">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2019/09/01093013/Endgame-Lead-1.jpg">
-                    <i class="far fa-play-circle"></i>
-                  </a>
-                  <p style="position: absolute;bottom: 0px;">asdasdasdasdasdasdsd</p>
-                  <div class="over-lay"></div>
-                </div>
-
-
-                <div class="hot-today-movie-left-double d-flex">
-
-                  <div class="hot-today-movie-left-second">
-                    <a href="#">
-                      <img
-                        src="https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2019/09/01093013/Endgame-Lead-1.jpg">
-                      <i class="far fa-play-circle"></i>
-                    </a>
-                    <p style="position: absolute;bottom: 0px;">asdasdasdasdasdasdsd</p>
-                    <div class="over-lay">
-
-                    </div>
-
+                    <ul class=" ">
+                       <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                       <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                       <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image" > </div> </a> </li>
+                      </ul>
                   </div>
-                  <div class="hot-today-movie-left-second">
-                    <a href="#">
-                      <img
-                        src="https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2019/09/01093013/Endgame-Lead-1.jpg">
-                      <i class="far fa-play-circle"></i>
-                    </a>
-                    <p style="position: absolute;bottom: 0px;">asdasdasdasdasdasdsd</p>
-                    <div class="over-lay">
-
-                    </div>
-                  </div>
-
-                </div>
-
-                <div class="hot-today-movie-left-first">
-                  <a href="#">
-                    <img
-                      src="https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2019/09/01093013/Endgame-Lead-1.jpg">
-                    <i class="far fa-play-circle"></i>
-                  </a>
-                  <p style="position: absolute;bottom: 0px;">asdasdasdasdasdasdsd</p>
-                  <div class="over-lay"></div>
-                </div>
-
             </div>
-            </fieldset>
+                </div>
 
-            <div class="hot-today-movie-right ml-5">
-              <fieldset
-                style="height: 473px; width: 301px; border: 1px solid #dbdbdb; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
+                <div class="today-title">
+                    <p>Today Film</p> 
+                 </div>
+                 
+                 <div class="body-top-today-film d-flex justify-content-center " style="padding: 0;">
+                     
+                     <div class="body-top-today-right " >
+                         <div class="body-top-today-right-top" >
+                             <div style="width: max-content;" class="body-bottom mt-2 ">
+                                 <ul class=" ">
+                                    <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div style="height:220px ; width: 390px ;" class="image" > </div> </a> </li>
+                                    
+                                   </ul>
+                               </div>
+                         </div>
+                         <div class="body-top-today-right-bottom ">
+                             <div style="width: max-content;" class="body-bottom mt-2">
+                             <ul class=" d-flex">
+                                <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div  class="image2" style="margin-right: 4px;"> </div> </a> </li>
+                                <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image2" > </div> </a> </li>
+                               
+                               </ul>
+                           </div>
+                         </div>
+                         
+                     </div>
+                     <div class="body-top-vote-left d-flex">
+                 <div style="width: max-content;" class="body-bottom mt-2 ">
+                   <ul class=" ">
+                      <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                      <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                      <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                     </ul>
+                 </div>
+                 <div style="width: max-content;" class="body-bottom mt-2 ">
+                    <ul class=" ">
+                        <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                        <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                        <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                       </ul>
+             </div>
+             <div style="width: max-content;" class="body-bottom mt-2 ">
+                <ul class=" ">
+                    <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                    <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                    <li><a href="#"> <i class="far fa-play-circle"></i><p ><strong>Movie Title </strong><span>HD</span> <br> Imdb: 9.5/10</p> <div class="image1" > </div> </a> </li>
+                   </ul>
+         </div>
+                 </div>
+            </div>
+
+           <div class="body-hot-today-movie d-flex justify-content-center">
+           
+
+              
+
+             <div class="hot-today-movie-right ml-5">
+              <fieldset style="height: 465px; width: 290px; border: 1px solid #dbdbdb; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;">
 
                 <legend>
-                  <button onclick="showFilm()"
-                    style="outline: none; background: transparent; border: 1px solid transparent; border: 1px solid #dbdbdb; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">click
-                    me </button>
+                  <button onclick="showFilm()" style="outline: none; background: transparent; border: 1px solid transparent; border: 1px solid #dbdbdb; border-radius: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">click me </button>
                 </legend>
-
-                <div class="box">
-                  <div id="box-content">
-                    <a href="" target="_blank"></a>
-                    <!-- <div class="box-img">
+                 
+                 <div class="box">
+                     <div id="box-content" style="margin-left: 16px; margin-top: 3px;">
+                       <a href="" target="_blank"></a>
+                         <!-- <div class="box-img">
                      <img src="https://i.redd.it/nh8ak50scze01.jpg" />
                    </div>
                    <div class="content-today">
@@ -562,37 +209,242 @@
                      <p>IMDb: 7.3/10</p>
                      <p>Genre: <span style="width: fit-content;">action</span> <span>fantasy</span></p>
                    </div> -->
-                  </div>
-
-                  <div id="watch-movie">
-                    <!-- <div class="button-today">
+                     </div>
+                   
+                   <div id="watch-movie">
+                     <!-- <div class="button-today">
                      <li><a class="b1" href="#">Watch now</a></li>
                      <li><a class="b1" href="#">Trailer</a></li>
                    </div> -->
-                  </div>
+                   </div>
+                   
+                 </div>
+             
+                  </fieldset>
 
-                </div>
+             </div>
+             <div class="hot-today-movie-right-description">
+                     <p>What is Lorem Ipsum?
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                      
+                      Why do we use it?
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+             </div>
+           
 
-              </fieldset>
-
-            </div>
-
-          </div>
+</div>
 
 
+<div class="body-review">
+  <div class="myCarousel" id="blur">
+    <div class="myCarousel-item">
+      <div class="myCard">
+        <div class="mySliderText"><h3>slide one</h3></div>
 
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
         </div>
-
-
-        <div class="footer"></div>
-
-
       </div>
+    </div>
+    <div class="myCarousel-item">
+      <div class="myCard">
+        <div class="mySliderText"><h3>slide two</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
       </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <script src="review.js"></script>
+    </div>
+    
 
-  </body>
 
-  </html>
+    <div class="myCarousel-item">
+      <div class="myCard">
+        <div class="mySliderText"><h3>slide three</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>four</irpn-man></h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>five</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>six</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>seven</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>eight</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>nine</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>ten</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="myCarousel-item">
+      
+      <div class="myCard">
+        
+        <div class="mySliderText"><h3>eleven</h3></div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="myCarousel-item">
+      <div class="myCard">
+        <div class="mySliderText"><h3>twelve</div>
+
+        <div class="myContent">
+          <p>asdasdasdasdasd</p>
+          <a href="#" onclick="toggle()">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<div id="popup">
+      <div class="popup-top">
+        <div class="popup-top-left">
+          <img src="https://pyxis.nymag.com/v1/imgs/794/95b/f753af574e71933a5d92a88eabf0c41549-23-brightburn-review.rsquare.w700.jpg"  alt="">
+        </div>
+        <div class="popup-top-right">
+          <h1 class="popup-h1" >FILM NAME</h1>
+          <div class="popup-top-des"><span class="popup-span">Country:</span>  #N/A </div>
+          <div class="popup-top-des"><span class="popup-span">Length:</span>  #N/A</div>
+          <div class="popup-top-des"><span class="popup-span">idmb:</span>  #N/A</div>
+          <div class="popup-top-des"><span class="popup-span">rotten tomatoes:</span> #N/A </div>
+          <div class="popup-top-des"><span class="popup-span">short summary:</span>  #N/A</div>
+          <hr>
+          <div class="popup-top-des"><span class="popup-span"><i class="fa fa-copyright"></i> <strong> Mọt Phim</strong> </span></div>
+          <div class="popup-top-des" style="padding-bottom: 3px;"><span class="popup-span">Tháng Bảy 25, 2020</span>  </div>
+          <div class="rating-star">
+            <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star unchecked"></span>
+          <span class="fa fa-star unchecked"></span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="popup-bottom">
+        <p >What is Lorem Ipsum?
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        
+        Why do we use it?
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        
+        
+        Where does it come from?
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+        
+        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+      <a href="#" onclick="toggle()">close</a>
+      </div>
+      
+    </div>
+
+</div>
+            
+</div>
+
+
+<div class="footer"></div>
+        
+    
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="review.js"></script>
+    <script src="upcomingfilm.js"></script>
+    </body>
+    </html>

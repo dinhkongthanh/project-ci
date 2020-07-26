@@ -1,5 +1,5 @@
 @import url("https://fonts/googleapis.com/css?family=Poppins:300,400,600,700");
-.body-review {
+/* .body-review {
   margin: 0;
   padding: 0;
   display: flex;
@@ -7,19 +7,19 @@
   align-items: center;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-}
-.carousel {
+} */
+.myCarousel {
   transform: translateY(-100px);
   height: 700px;
 
   perspective: 600px;
 }
-.carousel#blur.active {
+.myCarousel#blur.active {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
 }
-.card {
+.myCard {
   position: relative;
   background: #fff;
   width: 300px;
@@ -27,13 +27,13 @@
   margin: 0 auto;
   box-shadow: 6px 1px 6px 2px #000;
 }
-.card .content {
+.myCard .myContent {
   widows: 400px;
   padding: 30px;
   box-sizing: border-box;
 }
-.card .sliderText {
-  /* position: relative; */
+.myCard .mySliderText {
+  position: relative;
   width: 100%;
   height: 200px;
   display: flex;
@@ -43,12 +43,12 @@
   background: url("https://znews-photo.zadn.vn/w660/Uploaded/bzcvolp3/2019_04_29/ironmantony.jpg");
 }
 
-.card .sliderText h3 {
+.myCard .mySliderText h3 {
   color: #fff;
   font-size: 3em;
   opacity: 0.6;
 }
-.card .content a {
+.myCard .myContent a {
   display: inline-block;
   margin: 10px 0 0;
   padding: 10px 20px;
@@ -77,10 +77,10 @@
   opacity: 1;
   transition: 0.5s;
 }
-.carousel-item .card:hover {
+.myCarousel-item .myCard:hover {
   cursor: grab;
 }
-.carousel-item .author {
+.myCarousel-item .author {
   position: absolute;
 
   background: black;
@@ -103,7 +103,7 @@
   border-width: 0.5px;
   width: 80%;
 } */
-.card .content a:hover{
+.myCard .myContent a:hover{
     background: #000;
     color: #fff;
 }

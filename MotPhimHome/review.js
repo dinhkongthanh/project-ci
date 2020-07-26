@@ -1,6 +1,6 @@
-/*card-slider.js */
+/*myCard-slider.js */
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.myCarousel').carousel();
   });
 
   /*description.js */
